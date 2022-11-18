@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="MVVMDemo.Components.UserListItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MVVMDemo.Components" xmlns:cutomDropdwon="clr-namespace:DropdownMenuControl;assembly=DropdownMenuControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border Padding="10" CornerRadius="8">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="{Binding Name}"/>
+            <cutomDropdwon:DropdownMenu x:Name="dropdown" Grid.Column="1"  Margin="10 0 0 0 ">
+                <Border Background="White" BorderBrush="Gray" BorderThickness="1">
+                    <StackPanel MinWidth="80">
+                        <StackPanel.Resources>
+                            <Style BasedOn="{StaticResource btn}" TargetType="Button">
+                                <EventSetter Event="Click" Handler="Button_Click" ></EventSetter>
+                            </Style>
+                        </StackPanel.Resources>
+                        <Button BorderThickness="0" Command="{Binding EditCommand}" Content="Edit"></Button>
+                        <Button BorderThickness="0"  Command="{Binding DeleteCommand}" Content="Delete"></Button>
+                    </StackPanel>
+                </Border>
+            </cutomDropdwon:DropdownMenu>
+        </Grid>
+    </Border>
+</UserControl>

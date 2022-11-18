@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "8JbWh2pbVf+VbcC20edEbverIkDvRc3eVnnuXBRNC32hb9QlcoC7GZJCKuVWpI1JHe1IG191bE7lAUpamo1aPA==",
+  "success": true,
+  "projectFilePath": "C:\\Development\\WPF\\MVVMDemo\\MVVMDemo\\MVVMDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mghamloush\\.nuget\\packages\\documentformat.openxml\\2.18.0\\documentformat.openxml.2.18.0.nupkg.sha512",
+    "C:\\Users\\mghamloush\\.nuget\\packages\\dropdownmenu.wpf\\1.0.0\\dropdownmenu.wpf.1.0.0.nupkg.sha512",
+    "C:\\Users\\mghamloush\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\mghamloush\\.nuget\\packages\\simplemodal.wpf\\1.0.0\\simplemodal.wpf.1.0.0.nupkg.sha512",
+    "C:\\Users\\mghamloush\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
